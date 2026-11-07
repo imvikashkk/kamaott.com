@@ -1,6 +1,17 @@
 import Link from "next/link";
 import Wordmark from "./Wordmark";
-import { ADDRESS_LINES, BRAND, ENTITY, FOOTER_LINKS, UDYAM } from "@/lib/site";
+import {
+  ADDRESS_LINES,
+  BRAND,
+  EMAIL,
+  ENTITY,
+  FOOTER_LINKS,
+  ORG_TYPE,
+  PHONE,
+  PHONE_HREF,
+  PROPRIETOR,
+  UDYAM,
+} from "@/lib/site";
 
 export default function SiteFooter() {
   return (
@@ -23,7 +34,18 @@ export default function SiteFooter() {
               <span key={line}>{line}</span>
             ))}
           </address>
-          <p className="footer-note">Udyam Reg. No. {UDYAM}</p>
+          <p className="footer-note">
+            Proprietor: {PROPRIETOR}
+            <br />
+            {ORG_TYPE}
+            <br />
+            Udyam Reg. No. {UDYAM}
+          </p>
+          <p className="footer-note">
+            Phone: <a href={PHONE_HREF}>{PHONE}</a>
+            <br />
+            Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+          </p>
         </div>
 
         <nav aria-label="Policies and company">
