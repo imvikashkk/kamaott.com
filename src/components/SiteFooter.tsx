@@ -6,11 +6,8 @@ import {
   EMAIL,
   ENTITY,
   FOOTER_LINKS,
-  ORG_TYPE,
   PHONE,
   PHONE_HREF,
-  PROPRIETOR,
-  UDYAM,
 } from "@/lib/site";
 
 export default function SiteFooter() {
@@ -34,13 +31,6 @@ export default function SiteFooter() {
               <span key={line}>{line}</span>
             ))}
           </address>
-          <p className="footer-note">
-            Proprietor: {PROPRIETOR}
-            <br />
-            {ORG_TYPE}
-            <br />
-            Udyam Reg. No. {UDYAM}
-          </p>
           <p className="footer-note">
             Phone: <a href={PHONE_HREF}>{PHONE}</a>
             <br />
