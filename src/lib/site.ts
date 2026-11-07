@@ -4,8 +4,6 @@ export const DOMAIN = "kamaott.com";
 export const ENTITY = "Social Scaler";
 export const UDYAM = "UDYAM-OD-19-0015783";
 export const EMAIL = "kamaott.com@gmail.com";
-export const PHONE = "+91 79785 80471";
-export const PHONE_HREF = "tel:+917978580471";
 export const ADDRESS_LINES = [
   "188, Bhuasuni Road, Samantrapur",
   "Bhubaneswar, Khordha",

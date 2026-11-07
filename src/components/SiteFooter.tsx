@@ -6,8 +6,6 @@ import {
   EMAIL,
   ENTITY,
   FOOTER_LINKS,
-  PHONE,
-  PHONE_HREF,
 } from "@/lib/site";
 
 export default function SiteFooter() {
@@ -32,8 +30,6 @@ export default function SiteFooter() {
             ))}
           </address>
           <p className="footer-note">
-            Phone: <a href={PHONE_HREF}>{PHONE}</a>
-            <br />
             Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </p>
         </div>
