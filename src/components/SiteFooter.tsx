@@ -1,12 +1,6 @@
 import Link from "next/link";
 import Wordmark from "./Wordmark";
-import {
-  ADDRESS_LINES,
-  BRAND,
-  EMAIL,
-  ENTITY,
-  FOOTER_LINKS,
-} from "@/lib/site";
+import { BRAND, FOOTER_LINKS } from "@/lib/site";
 
 export default function SiteFooter() {
   return (
@@ -17,20 +11,11 @@ export default function SiteFooter() {
             <Wordmark />
           </Link>
           <p className="footer-note">
-            {BRAND} is operated by {ENTITY}.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="footer-heading">Registered address</h2>
-          <address className="footer-address">
-            <strong>{ENTITY}</strong>
-            {ADDRESS_LINES.map((line) => (
-              <span key={line}>{line}</span>
-            ))}
-          </address>
-          <p className="footer-note">
-            Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            {BRAND} is operated by{" "}
+            <a href="https://zenzworld.com" target="_blank" rel="noopener noreferrer">
+              Zenz World
+            </a>
+            .
           </p>
         </div>
 
